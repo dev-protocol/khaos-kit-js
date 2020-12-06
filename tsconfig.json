@@ -1,12 +1,15 @@
 {
 	"compilerOptions": {
-		"module": "commonjs",
+		"module": "UMD",
+		"moduleResolution": "Node",
 		"target": "es6",
-		"rootDir": ".",
-		"sourceMap": true,
+		"outDir": "./",
+		"sourceMap": false,
 		"strict": true,
 		"esModuleInterop": true,
 		"skipLibCheck": true,
 		"declaration": true
-	}
+	},
+	"include": ["src"],
+	"exclude": []
 }

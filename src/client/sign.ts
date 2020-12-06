@@ -1,5 +1,5 @@
-import { ethereum } from './endpoint'
-import { bent } from './_defaultExport'
+import { ethereum } from '../util/endpoint'
+import { bent } from '../_lib/_defaultExport'
 
 export type KhaosSignOptions = {
 	readonly message: string

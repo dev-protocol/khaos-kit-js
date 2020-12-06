@@ -4,14 +4,17 @@
 	"description": "Khaos SDK for JavaScript",
 	"main": "index.js",
 	"files": [
-		"lib"
+		"util",
+		"client",
+		"index.js",
+		"index.d.ts"
 	],
 	"scripts": {
 		"test": "ava",
 		"build": "tsc",
 		"watch": "tsc -w",
 		"pretest": "yarn build",
-		"prebuild": "rimraf *.d.ts *.js *.js.map lib/*.d.ts lib/*.js lib/*.js.map",
+		"prebuild": "rimraf *.ts *.js util client",
 		"lint": "yarn lint:eslint && yarn lint:format",
 		"lint:eslint": "eslint . --ext .ts,.js --fix",
 		"lint:format": "prettier --write '**/*.{ts,js,json,md,yml}'",
@@ -49,7 +52,7 @@
 		],
 		"typescript": {
 			"rewritePaths": {
-				"/": "dist/"
+				"/": "/"
 			}
 		}
 	},

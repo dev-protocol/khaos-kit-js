@@ -1,8 +1,8 @@
 import test from 'ava'
 import { fake, stub } from 'sinon'
-import { ethereum } from './endpoint'
+import { ethereum } from '../util/endpoint'
 import { sign } from './sign'
-import * as x from './_defaultExport'
+import * as x from '../_lib/_defaultExport'
 
 const bentFakeFetcher = fake.returns(Promise.resolve())
 const bentFakeCaller = fake.returns(bentFakeFetcher)
