@@ -1,7 +1,7 @@
 {
-	"name": "template-repos-ts",
+	"name": "@devprtcl/khaos-kit",
 	"version": "1.0.0",
-	"description": "Template repository for using TypeScript",
+	"description": "Khaos SDK for JavaScript",
 	"main": "index.js",
 	"scripts": {
 		"test": "ava",
@@ -16,7 +16,6 @@
 	"author": "",
 	"license": "MPL-2.0",
 	"dependencies": {
-		"ethereum-waffle": "3.2.1",
 		"ramda": "^0.27.1"
 	},
 	"devDependencies": {
@@ -51,12 +50,15 @@
 			"pre-commit": "yarn lint"
 		}
 	},
+	"directories": {
+		"example": "example"
+	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/dev-protocol/template-repos-ts.git"
+		"url": "git+https://github.com/dev-protocol/khaos-kit-js.git"
 	},
 	"bugs": {
-		"url": "https://github.com/dev-protocol/template-repos-ts/issues"
+		"url": "https://github.com/dev-protocol/khaos-kit-js/issues"
 	},
-	"homepage": "https://github.com/dev-protocol/template-repos-ts#readme"
+	"homepage": "https://github.com/dev-protocol/khaos-kit-js#readme"
 }
