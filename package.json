@@ -1,5 +1,5 @@
 {
-	"name": "@devprtcl/khaos-kit-js",
+	"name": "@devprotocol/khaos-kit",
 	"version": "0.0.3",
 	"description": "Khaos SDK for JavaScript",
 	"main": "index.js",
