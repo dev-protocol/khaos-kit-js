@@ -63,7 +63,7 @@
 		],
 		"typescript": {
 			"rewritePaths": {
-				"src/": "dist/"
+				"/": "dist/"
 			}
 		}
 	},
