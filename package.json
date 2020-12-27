@@ -1,6 +1,6 @@
 {
 	"name": "@devprotocol/khaos-kit",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Khaos SDK for JavaScript",
 	"main": "dist/index.js",
 	"exports": {
