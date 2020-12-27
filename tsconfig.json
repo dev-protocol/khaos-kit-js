@@ -3,13 +3,14 @@
 		"module": "UMD",
 		"moduleResolution": "Node",
 		"target": "es6",
-		"outDir": "./",
+		"outDir": "dist",
+		"rootDir": ".",
 		"sourceMap": false,
 		"strict": true,
 		"esModuleInterop": true,
 		"skipLibCheck": true,
 		"declaration": true
 	},
-	"include": ["src"],
+	"include": ["src", "rollup.config.js"],
 	"exclude": []
 }

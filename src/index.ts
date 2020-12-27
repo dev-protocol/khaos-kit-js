@@ -1,3 +1,7 @@
-export * from './util/endpoint'
+import { client } from './client'
+import { util } from './util'
 
-export * from './client/sign'
+export default {
+	client,
+	util,
+}
