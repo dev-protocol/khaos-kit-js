@@ -74,7 +74,7 @@
     "@nodelib/fs.scandir" "2.1.3"
     fastq "^1.6.0"
 
-"@rollup/plugin-multi-entry@^4.0.0":
+"@rollup/plugin-multi-entry@4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@rollup/plugin-multi-entry/-/plugin-multi-entry-4.0.0.tgz#8e105f16ec1bb26639eb3302c8db5665f44b9939"
   integrity sha512-1Sw86rwFxrNS7ECY3iSZ7T940xKnruNGpmQDgSDVTp+VTa1g5cPXNzBgp+IoOer41CiVeGFLwYwvicVoJLHEDQ==
@@ -82,7 +82,7 @@
     "@rollup/plugin-virtual" "^2.0.3"
     matched "^5.0.0"
 
-"@rollup/plugin-typescript@^8.1.0":
+"@rollup/plugin-typescript@8.1.0":
   version "8.1.0"
   resolved "https://registry.yarnpkg.com/@rollup/plugin-typescript/-/plugin-typescript-8.1.0.tgz#b7bbbbb4fd1324834f37844efd48b3844d912742"
   integrity sha512-pyQlcGQYRsONUDwXK3ckGPHjPzmjlq4sinzr7emW8ZMb2oZjg9WLcdcP8wyHSvBjvHrLzMayyPy079RROqb4vw==
@@ -176,12 +176,7 @@
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.6.tgz#f4c7ec43e81b319a9815115031709f26987891f0"
   integrity sha512-3c+yGKvVP5Y9TYBEibGNR+kLtijnj7mYrXRg+WpFb2X9xm04g/DXYkfg4hmzJQosc9snFNUPkbYIhu+KAm6jJw==
 
-"@types/node@*":
-  version "14.14.16"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.16.tgz#3cc351f8d48101deadfed4c9e4f116048d437b4b"
-  integrity sha512-naXYePhweTi+BMv11TgioE2/FXU4fSl29HAH1ffxVciNsH3rYXjNP2yM8wqmSm7jS20gM8TIklKiTen+1iVncw==
-
-"@types/node@14.14.16":
+"@types/node@*", "@types/node@14.14.16":
   version "14.14.16"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.16.tgz#3cc351f8d48101deadfed4c9e4f116048d437b4b"
   integrity sha512-naXYePhweTi+BMv11TgioE2/FXU4fSl29HAH1ffxVciNsH3rYXjNP2yM8wqmSm7jS20gM8TIklKiTen+1iVncw==
@@ -2368,7 +2363,7 @@ rimraf@3.0.2, rimraf@^3.0.2:
   dependencies:
     glob "^7.1.3"
 
-rollup-plugin-dts@^2.0.1:
+rollup-plugin-dts@2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/rollup-plugin-dts/-/rollup-plugin-dts-2.0.1.tgz#333f50a637e199a073d490b198746f3c6bd07701"
   integrity sha512-y38NSXIY37YExCumbGBTL5dXg7pL7XD+Kbe98iEHWFN9yiKJf7t4kKBOkml5ylUDjQIXBnNClGDeRktc1T5dmA==
@@ -2377,7 +2372,7 @@ rollup-plugin-dts@^2.0.1:
   optionalDependencies:
     "@babel/code-frame" "^7.10.4"
 
-rollup@^2.35.1:
+rollup@2.35.1:
   version "2.35.1"
   resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.35.1.tgz#e6bc8d10893556a638066f89e8c97f422d03968c"
   integrity sha512-q5KxEyWpprAIcainhVy6HfRttD9kutQpHbeqDTWnqAFNJotiojetK6uqmcydNMymBEtC4I8bCYR+J3mTMqeaUA==
