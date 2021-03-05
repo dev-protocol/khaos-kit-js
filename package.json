@@ -30,7 +30,7 @@
 	"author": "",
 	"license": "MPL-2.0",
 	"dependencies": {
-		"@devprotocol/khaos-functions": "0.3.2",
+		"@devprotocol/khaos-functions": "0.3.4",
 		"@ethersproject/contracts": "5.0.11",
 		"bent": "^7.3.12",
 		"ramda": "^0.27.1",
