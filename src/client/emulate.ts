@@ -14,7 +14,11 @@ export type KhaosEmulateOptions = {
 	readonly event: SetOptional<MergedEvent, keyof MergedEvent>
 }
 
-export type KhaosEmulateResponse = PromiseValue<V0Results<PackOptions>>
+type PackResponse = NonNullable<PromiseValue<V0Results<PackOptions>>['data']>
+
+export type KhaosEmulateResponse = {
+	readonly data?: Merge<PackResponse, { readonly gasLimit?: string }>
+}
 
 export const emulate = (
 	id: string,
