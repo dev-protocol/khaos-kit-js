@@ -15,9 +15,16 @@ export type KhaosEmulateOptions = {
 }
 
 type PackResponse = NonNullable<PromiseValue<V0Results<PackOptions>>['data']>
+type ExpectedTransaction = {
+	readonly gasLimit?: string
+	readonly success: boolean
+}
 
 export type KhaosEmulateResponse = {
-	readonly data?: Merge<PackResponse, { readonly gasLimit?: string }>
+	readonly data?: Merge<
+		PackResponse,
+		{ readonly expectedTransaction: ExpectedTransaction }
+	>
 }
 
 export const emulate = (
