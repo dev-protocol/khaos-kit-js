@@ -34,6 +34,6 @@ export const emulate = (
 	const fetcher = bent(`${ethereum[network]}/emulate/${id}`, 'POST', 'json')
 	return (options: KhaosEmulateOptions): Promise<KhaosEmulateResponse> =>
 		fetcher('/', { ...options, ...{ network } }).then(
-			(r) => (r as unknown) as KhaosEmulateResponse
+			(r) => r as unknown as KhaosEmulateResponse
 		)
 }
