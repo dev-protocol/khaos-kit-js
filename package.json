@@ -68,7 +68,8 @@
 		"typescript": {
 			"rewritePaths": {
 				"/": "dist/"
-			}
+			},
+			"compile": false
 		}
 	},
 	"directories": {
