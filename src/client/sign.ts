@@ -26,5 +26,5 @@ export const sign = (
 			signature,
 			secret,
 			message,
-		}).then((r) => (r as unknown) as KhaosSignResponse)
+		}).then((r) => r as unknown as KhaosSignResponse)
 }
