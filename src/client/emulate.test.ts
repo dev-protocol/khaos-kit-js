@@ -1,6 +1,6 @@
 import test from 'ava'
 import { fake, stub } from 'sinon'
-import { ethereum } from '../util/endpoint'
+import { endpoint } from '../util/endpoint'
 import * as x from '../_lib/_defaultExport'
 import { emulate } from './emulate'
 
@@ -26,7 +26,7 @@ test('Send emulate request', async (t) => {
 
 	t.deepEqual(res, { data: 'just a test' } as any)
 	t.deepEqual(bentFakeCaller.getCall(0).args, [
-		`${ethereum.ropsten}/emulate/test`,
+		`${endpoint.ropsten}/emulate/test`,
 		'POST',
 		'json',
 	])
@@ -54,7 +54,7 @@ test('Send sign request as mainnet by default', async (t) => {
 
 	t.deepEqual(res, { data: 'just a test' } as any)
 	t.deepEqual(bentFakeCaller.getCall(1).args, [
-		`${ethereum.mainnet}/emulate/test`,
+		`${endpoint.mainnet}/emulate/test`,
 		'POST',
 		'json',
 	])

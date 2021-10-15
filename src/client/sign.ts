@@ -1,4 +1,4 @@
-import { ethereum } from '../util/endpoint'
+import { endpoint } from '../util/endpoint'
 import { bent } from '../_lib/_defaultExport'
 
 export type KhaosSignOptions = {
@@ -14,9 +14,9 @@ export type KhaosSignResponse = {
 
 export const sign = (
 	id: string,
-	network: keyof typeof ethereum = 'mainnet'
+	network: keyof typeof endpoint = 'mainnet'
 ): ((options: KhaosSignOptions) => Promise<KhaosSignResponse>) => {
-	const fetcher = bent(`${ethereum[network]}/sign/${id}`, 'POST', 'json')
+	const fetcher = bent(`${endpoint[network]}/sign/${id}`, 'POST', 'json')
 	return ({
 		message,
 		signature,
