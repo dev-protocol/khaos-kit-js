@@ -1,3 +1,4 @@
+import { NetworkName } from '@devprotocol/khaos-core'
 import { endpoint } from '../util/endpoint'
 import { bent } from '../_lib/_defaultExport'
 import { V0Results, PackOptions } from '@devprotocol/khaos-functions'
@@ -29,9 +30,21 @@ export type KhaosEmulateResponse = {
 
 export const emulate = (
 	id: string,
-	network: keyof typeof endpoint = 'mainnet'
+	network: NetworkName = 'mainnet'
 ): ((options: KhaosEmulateOptions) => Promise<KhaosEmulateResponse>) => {
-	const fetcher = bent(`${endpoint[network]}/emulate/${id}`, 'POST', 'json')
+	const fetcher = bent(
+		`${
+			endpoint[
+				network === 'arbitrum-one'
+					? 'arbitrumOne'
+					: network === 'arbitrum-rinkeby'
+					? 'arbitrumRinkeby'
+					: network
+			]
+		}/emulate/${id}`,
+		'POST',
+		'json'
+	)
 	return (options: KhaosEmulateOptions): Promise<KhaosEmulateResponse> =>
 		fetcher('/', { ...options, ...{ network } }).then(
 			(r) => r as unknown as KhaosEmulateResponse

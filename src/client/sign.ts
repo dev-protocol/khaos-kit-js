@@ -1,3 +1,4 @@
+import { NetworkName } from '@devprotocol/khaos-core'
 import { endpoint } from '../util/endpoint'
 import { bent } from '../_lib/_defaultExport'
 
@@ -14,9 +15,21 @@ export type KhaosSignResponse = {
 
 export const sign = (
 	id: string,
-	network: keyof typeof endpoint = 'mainnet'
+	network: NetworkName = 'mainnet'
 ): ((options: KhaosSignOptions) => Promise<KhaosSignResponse>) => {
-	const fetcher = bent(`${endpoint[network]}/sign/${id}`, 'POST', 'json')
+	const fetcher = bent(
+		`${
+			endpoint[
+				network === 'arbitrum-one'
+					? 'arbitrumOne'
+					: network === 'arbitrum-rinkeby'
+					? 'arbitrumRinkeby'
+					: network
+			]
+		}/sign/${id}`,
+		'POST',
+		'json'
+	)
 	return ({
 		message,
 		signature,
