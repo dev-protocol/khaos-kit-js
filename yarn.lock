@@ -15,11 +15,6 @@
   resolved "https://registry.yarnpkg.com/@azure/functions/-/functions-3.0.0.tgz#1466371562591d17232d39eea2126fb5deb60beb"
   integrity sha512-nxOdQdYoy9JEdAPsQlBWavsRvbH5qT2fpwMcY64s1sLIT8QwtW7ebh/MJNgzeAac+JaC6IED7plDiizq8oZUNw==
 
-"@azure/functions@^1.2.3":
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/@azure/functions/-/functions-1.2.3.tgz#65765837e7319eedffbf8a971cb2f78d4e043d54"
-  integrity sha512-dZITbYPNg6ay6ngcCOjRUh1wDhlFITS0zIkqplyH5KfKEAVPooaoaye5mUFnR+WP9WdGRjlNXyl/y2tgWKHcRg==
-
 "@babel/code-frame@7.12.11":
   version "7.12.11"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.12.11.tgz#f4ad435aa263db935b8f10f2c552d23fb716a63f"
@@ -61,17 +56,6 @@
     "@babel/helper-validator-identifier" "^7.15.7"
     chalk "^2.0.0"
     js-tokens "^4.0.0"
-
-"@devprotocol/khaos-core@1.5.1":
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/@devprotocol/khaos-core/-/khaos-core-1.5.1.tgz#eadb211634cf3e1ec9ca9ee69631b215ad9fe430"
-  integrity sha512-VTSWfPdXXCDA304XTiWwwPV/m4doOm2V1GIjkbBXKqGowxAA0bccoLNzGOnvGwVUj5LMswSR8iEnLxG4Rs3Zng==
-  dependencies:
-    "@azure/functions" "^1.2.3"
-    "@devprotocol/util-ts" "2.2.1"
-    "@ethersproject/abi" "^5.1.0"
-    jsonwebtoken "^8.5.1"
-    ramda "^0.27.1"
 
 "@devprotocol/khaos-core@1.6.0":
   version "1.6.0"
