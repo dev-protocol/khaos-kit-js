@@ -24,6 +24,10 @@ export const sign = (
 					? 'arbitrumOne'
 					: network === 'arbitrum-rinkeby'
 					? 'arbitrumRinkeby'
+					: network === 'polygon-mainnet'
+					? 'polygonMainnet'
+					: network === 'polygon-mumbai'
+					? 'polygonMumbai'
 					: network
 			]
 		}/sign/${id}`,
