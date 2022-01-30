@@ -5,7 +5,7 @@ import { sign } from './sign'
 import * as x from '../_lib/_defaultExport'
 
 const bentFakeFetcher = fake.returns(Promise.resolve()) as Sinon.SinonSpy<
-	readonly any[]
+	any[]
 >
 const bentFakeCaller = fake.returns(bentFakeFetcher)
 const bentStub = stub(x, 'bent').callsFake(bentFakeCaller)
