@@ -4,10 +4,8 @@ import { endpoint } from '../util/endpoint'
 import { sign } from './sign'
 import * as x from '../_lib/_defaultExport'
 
-const bentFakeFetcher = fake.returns(Promise.resolve()) as Sinon.SinonSpy<
-	any[]
->
-const bentFakeCaller = fake.returns(bentFakeFetcher)
+const bentFakeFetcher = fake.returns(Promise.resolve())
+const bentFakeCaller = fake.returns(bentFakeFetcher) as Sinon.SinonSpy<any[]>
 const bentStub = stub(x, 'bent').callsFake(bentFakeCaller)
 
 test.after(() => {
