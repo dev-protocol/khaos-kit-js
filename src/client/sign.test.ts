@@ -1,10 +1,12 @@
 import test from 'ava'
-import { fake, stub } from 'sinon'
+import Sinon, { fake, stub } from 'sinon'
 import { endpoint } from '../util/endpoint'
 import { sign } from './sign'
 import * as x from '../_lib/_defaultExport'
 
-const bentFakeFetcher = fake.returns(Promise.resolve())
+const bentFakeFetcher = fake.returns(Promise.resolve()) as Sinon.SinonSpy<
+	readonly any[]
+>
 const bentFakeCaller = fake.returns(bentFakeFetcher)
 const bentStub = stub(x, 'bent').callsFake(bentFakeCaller)
 
