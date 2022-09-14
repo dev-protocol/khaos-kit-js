@@ -44,7 +44,7 @@
 		"@rollup/plugin-typescript": "8.5.0",
 		"@types/bent": "7.3.2",
 		"@types/dotenv": "8.2.0",
-		"@types/node": "16.11.58",
+		"@types/node": "16.11.59",
 		"@types/ramda": "0.28.15",
 		"@types/sinon": "10.0.13",
 		"@typescript-eslint/eslint-plugin": "5.37.0",
