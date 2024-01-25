@@ -39,7 +39,7 @@
 		"type-fest": "^2.0.0"
 	},
 	"devDependencies": {
-		"@ava/typescript": "3.0.1",
+		"@ava/typescript": "4.1.0",
 		"@rollup/plugin-multi-entry": "4.1.0",
 		"@rollup/plugin-typescript": "8.5.0",
 		"@types/bent": "7.3.8",
