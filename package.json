@@ -45,7 +45,7 @@
 		"@types/bent": "7.3.8",
 		"@types/dotenv": "8.2.0",
 		"@types/node": "20.11.6",
-		"@types/ramda": "0.29.3",
+		"@types/ramda": "0.29.12",
 		"@types/sinon": "10.0.20",
 		"@typescript-eslint/eslint-plugin": "5.62.0",
 		"@typescript-eslint/parser": "5.62.0",
