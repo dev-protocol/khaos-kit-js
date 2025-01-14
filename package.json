@@ -43,7 +43,7 @@
 		"@rollup/plugin-multi-entry": "4.1.0",
 		"@rollup/plugin-typescript": "8.5.0",
 		"@types/bent": "7.3.8",
-		"@types/dotenv": "8.2.0",
+		"@types/dotenv": "8.2.3",
 		"@types/node": "20.16.5",
 		"@types/ramda": "0.30.2",
 		"@types/sinon": "17.0.3",
