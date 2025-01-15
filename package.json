@@ -49,7 +49,7 @@
 		"@types/sinon": "17.0.3",
 		"@typescript-eslint/eslint-plugin": "5.62.0",
 		"@typescript-eslint/parser": "5.62.0",
-		"ava": "4.3.3",
+		"ava": "6.2.0",
 		"eslint": "8.57.1",
 		"dotenv": "16.4.7",
 		"eslint-config-prettier": "9.1.0",
