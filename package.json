@@ -33,7 +33,7 @@
 	"dependencies": {
 		"@devprotocol/khaos-core": "1.6.0",
 		"@devprotocol/khaos-functions": "0.4.2",
-		"@ethersproject/contracts": "5.7.0",
+		"@ethersproject/contracts": "5.8.0",
 		"bent": "^7.3.12",
 		"ramda": "^0.30.0",
 		"type-fest": "^2.0.0"
