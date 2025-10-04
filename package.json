@@ -52,7 +52,7 @@
 		"ava": "4.3.3",
 		"eslint": "8.57.1",
 		"dotenv": "16.5.0",
-		"eslint-config-prettier": "9.1.0",
+		"eslint-config-prettier": "9.1.2",
 		"eslint-plugin-functional": "4.4.1",
 		"husky": "7.0.4",
 		"prettier": "2.8.8",
