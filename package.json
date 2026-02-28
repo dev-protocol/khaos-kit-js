@@ -35,7 +35,7 @@
 		"@devprotocol/khaos-functions": "0.4.2",
 		"@ethersproject/contracts": "5.8.0",
 		"bent": "^7.3.12",
-		"ramda": "^0.30.0",
+		"ramda": "^0.32.0",
 		"type-fest": "^2.0.0"
 	},
 	"devDependencies": {
@@ -45,7 +45,7 @@
 		"@types/bent": "7.3.8",
 		"@types/dotenv": "8.2.3",
 		"@types/node": "20.19.35",
-		"@types/ramda": "0.30.2",
+		"@types/ramda": "0.31.1",
 		"@types/sinon": "17.0.4",
 		"@typescript-eslint/eslint-plugin": "5.62.0",
 		"@typescript-eslint/parser": "5.62.0",
