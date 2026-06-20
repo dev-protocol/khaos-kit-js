@@ -46,7 +46,7 @@
 		"@types/dotenv": "8.2.3",
 		"@types/node": "24.13.2",
 		"@types/ramda": "0.32.0",
-		"@types/sinon": "17.0.4",
+		"@types/sinon": "21.0.1",
 		"@typescript-eslint/eslint-plugin": "5.62.0",
 		"@typescript-eslint/parser": "5.62.0",
 		"ava": "4.3.3",
